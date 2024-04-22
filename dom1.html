@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício DOM</title>
+</head>
+<body>
+    <h1 id="mensagem">Olá, Mundo!</h1>
+    <button onclick="mudarTexto()",>Mudar Texto</button>
+    <button onclick="mudarCor()",>Mudar Cor</button>
+    <script>
+        function mudarTexto() {
+                let mensagem = document.getElementById('mensagem');
+                mensagem.textContent = "Texto adicionado dinamicamente.";
+               
+        }
+        function mudarCor() {
+            
+                let mensagem = document.getElementById('mensagem')
+                mensagem.style.color = "red";
+        }
+
+    </script>
+</body>
+</html>
